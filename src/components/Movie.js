@@ -11,16 +11,16 @@ class Movie extends Component {
 
 
   true=()=>{
-    let id=this.props.match.params.id
+    // let id=this.props.match.params.id
     let i=this.props.movie
-    return <div> <Link to={'/movies/' + id}> <img src={i.img} alt="not found" border="2" width="70" height="70"></img> </Link>
+    return <div> <Link to={'/movies/' + i.id}> <img src={i.img} alt="not found" border="2" width="70" height="70"></img> </Link>
     <button className="button-r" onClick={this.rentingStatus}> - </button>  </div> 
   }
 
   false=()=>{
-    let id=this.props.match.params.id
+    // let id=this.props.match.params.id
     let i=this.props.movie
-    return <div> <Link to={'/movies/' + id}> <img src={i.img} alt="not found" border="2" width="70" height="70"></img></Link> 
+    return <div> <Link to={'/movies/' + i.id}> <img src={i.img} alt="not found" border="2" width="70" height="70"></img></Link> 
     <button className="button-g" onClick={this.rentingStatus}> + </button>  </div> 
   }
 

@@ -5,8 +5,8 @@ class MovieDetail extends Component {
   render() {
     return (
       <div>
-       <h4>{this.props.data[1].title} - {this.props.data[1].year} </h4> 
-       <div>{this.props.data[1].descrShort}</div>
+       <h4>{this.props.data[this.props.match.params.id].title} - {this.props.data[this.props.match.params.id].year} </h4> 
+       <div>{this.props.data[this.props.match.params.id].descrShort}</div>
       </div>
     )
   }
