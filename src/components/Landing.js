@@ -7,7 +7,7 @@ class Landing extends Component {
         super()
         this.state = {
             data: [ { name: "Yoni", background: "blue" },
-                    { name: "Mony", background: "yellow" }
+                    { name: "Roey", background: "yellow" }
             ]
         }
     }
